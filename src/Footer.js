@@ -14,7 +14,7 @@ const Footer = ({ length }) => {
       </p>
       <b>
         <p>
-          &copy; {currentYear} Developed By Roshan{' '}
+          &copy; {currentYear} Developed By Roshan{' '} <br></br>
           <span className="icon-container">
             <a href={githubURL} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginRight: '10px', color: 'black' }}>
               <FontAwesomeIcon icon={faGithub} className="footer-icon" />

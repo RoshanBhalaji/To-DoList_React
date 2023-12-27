@@ -3,17 +3,18 @@ import { FaTrashAlt } from 'react-icons/fa';
 
 const LineItems = ({ item, change, deleteItem }) => {
   return (
-    <li key={item.id} id={item.id} className="list" style={{color:'#fff'}}>
+    <li key={item.id} id={item.id} className="list" style={{ color: '#fff' }}>
       <input
         type="checkbox"
         checked={item.checked}
-        onChange={() => change(item.id)} // Corrected placement of closing curly brace
+        onChange={() => change(item.id)}
       />
       <label
         onDoubleClick={() => change(item.id)}
         style={{
           textDecoration: item.checked ? 'line-through' : 'none',
-          color: item.checked ? 'red' : 'initial',
+          color: item.checked ? 'red' : '#fff',
+          fontWeight: 'bold',
         }}
       >
         {item.item}
